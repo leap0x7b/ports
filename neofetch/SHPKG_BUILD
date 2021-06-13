@@ -21,13 +21,13 @@ case "${SHPKG_DISTRO}" in
 esac
 
 prepare(){
-	cd "${SRCDIR}/pfetch-master"
+	cd "${SRCDIR}/neofetch-master"
 }
 
 finish(){
 	echo "Installing neofetch..."
 	${SHPKG_SUDO} install -m 755 neofetch ${INSTALL_PREFIX}/shpkg-neofetch
-	echo "To use pfetch, execute ${BOLD}shpkg-neofetch${NOATTR} command"
+	echo "To use neofetch, execute ${BOLD}shpkg-neofetch${NOATTR} command"
 }
 
 remove(){
