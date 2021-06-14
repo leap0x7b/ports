@@ -1,5 +1,5 @@
 # package name
-shpkg_name"Oh My ZSH"
+shpkg_name="Oh My ZSH"
 
 # package source code
 shpkg_source="https://github.com/ohmyzsh/ohmyzsh/archive/refs/heads/master.zip"
@@ -28,7 +28,7 @@ prepare(){
 }
 
 finish(){
-	ZSH=${INSTALL_PREFIX} ${SHPKG_SUDO} bash tools/install.sh
+	ZSH=${INSTALL_PREFIX} ${SHPKG_SUDO} bash tools/install.sh --unattended
 }
 
 remove(){
