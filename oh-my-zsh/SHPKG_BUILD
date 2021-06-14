@@ -32,6 +32,6 @@ finish(){
 }
 
 remove(){
-	${SHPKG_SUDO} rm -rf $INSTALL_PREFIX
+	${SHPKG_SUDO} rm -rf ${INSTALL_PREFIX}
 	mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
 }
